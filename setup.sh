@@ -5,6 +5,9 @@ sudo pacman -Syu --noconfirm
 sudo pacman --noconfirm -S tilix dconf-editor xbindkeys xdotool flameshot git docker docker-compose neovim ripgrep pavucontrol postgresql-libs
 sudo pamac install --no-confirm microsoft-edge-stable-bin dropbox hidamari epson-inkjet-printer-escpr
 
+# Removendo pacote fcitx5, pois o mesmo trava o idioma de entrada definido na instalação
+sudo pacman -Rns fcitx5
+
 # Usb mount support
 sudo pacman --noconfirm -S udisks2 udiskie
 # Blacklist ntfs3 to mount ntfs drives
